@@ -70,7 +70,6 @@
     <Content Include=".gitignore" />
     <Content Include="404.html" />
     <Content Include="Admin\index.aspx" />
-    <Content Include="Admin\index1.aspx" />
     <Content Include="Admin\manageuser.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
@@ -78,6 +77,13 @@
     <Content Include="buttons.html" />
     <Content Include="cards.html" />
     <Content Include="charts.html" />
+    <Content Include="Config\City\Create.aspx" />
+    <Content Include="Config\Country\Create.aspx" />
+    <Content Include="Config\Department\Create.aspx" />
+    <Content Include="Config\Designation\Create.aspx" />
+    <Content Include="Config\Role\Create.aspx" />
+    <Content Include="Config\Role\index.aspx" />
+    <Content Include="Config\State\Create.aspx" />
     <Content Include="css\sb-admin-2.css" />
     <Content Include="css\sb-admin-2.min.css" />
     <Content Include="forgot-password.html" />
@@ -1828,13 +1834,6 @@
     <Compile Include="Admin\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\index1.aspx.cs">
-      <DependentUpon>index1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\index1.aspx.designer.cs">
-      <DependentUpon>index1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\manageuser.aspx.cs">
       <DependentUpon>manageuser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1843,11 +1842,63 @@
       <DependentUpon>manageuser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Business Logic\ProfileBL.cs" />
+    <Compile Include="Business Logic\RoleBL.cs" />
     <Compile Include="Business Logic\UserBL.cs" />
     <Compile Include="Business Object\GroupBO.cs" />
     <Compile Include="Business Object\ProfileBO.cs" />
+    <Compile Include="Business Object\RoleBO.cs" />
     <Compile Include="Business Object\UserBO.cs" />
+    <Compile Include="Config\City\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Config\City\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Config\Country\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Config\Country\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Config\Department\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Config\Department\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Config\Designation\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Config\Designation\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Config\Role\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Config\Role\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Config\Role\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Config\Role\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Config\State\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Config\State\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Data  Access\ProfileDA.cs" />
+    <Compile Include="Data  Access\RoleDA.cs" />
     <Compile Include="Data  Access\UserDA.cs" />
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

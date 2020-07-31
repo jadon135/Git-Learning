@@ -21,6 +21,12 @@
 
   <!-- Custom styles for this template-->
   <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+    <style type="text/css">
+        .error{
+            color:red;
+            font-size:14px;
+        }
+    </style>
 </head>
 <body d="page-top">
     <form id="form1" runat="server">
@@ -69,8 +75,8 @@
             <a class="collapse-item" href="/Config/Department/Create.aspx">Department</a>
             <a class="collapse-item" href="/Config/Designation/Create.aspx">Designation</a>
             <a class="collapse-item" href="/Config/Country/Create.aspx">Country</a>
-            <a class="collapse-item" href="cards.html">State</a>
-            <a class="collapse-item" href="cards.html">City</a>
+            <a class="collapse-item" href="/Config/State/Create.aspx">State</a>
+            <a class="collapse-item" href="/Config/City/Create.aspx">City</a>
           </div>
         </div>
       </li>
@@ -354,7 +360,8 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2020</span>
+            <span>Copyright &copy;<a href="http://naashtech.com"> Nash 2020</a></span>
+              
           </div>
         </div>
       </footer>

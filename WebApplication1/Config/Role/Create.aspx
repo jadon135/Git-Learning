@@ -20,7 +20,8 @@
                         <div class="card-body">
 
                             <div class="col-lg-12">
-                                <input type="text" id="txtName" runat="server" class="form-control" placeholder="Enter Role" />
+                                <asp:TextBox ID="txtName" class="form-control" placeholder="Enter Role" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="error" ControlToValidate="txtName" runat="server" ErrorMessage="please enter role name !!"></asp:RequiredFieldValidator>
 
                             </div>
                             <br />
@@ -28,15 +29,24 @@
 
                             <div class="col-lg-12">
                                
-                                <select class="form-control">
-                                    <option>-Select Status-</option>
-                                    <option>Active</option>
-                                    <option>Deactive</option>
-                                </select>
+                                <%--<select class="form-control" id="ddlStatus" runat="server" >
+                                    <option value="-Select Status-" >-Select Status-</option>
+                                    <option value="1" >Active</option>
+                                    <option value="0">Deactive</option>
+                                </select>--%>
+                                <asp:DropDownList ID="ddlStatus" CssClass="form-control" runat="server">
+                                    <asp:ListItem Value="-Select Status-">-Select Status-</asp:ListItem>
+                                    <asp:ListItem Value="1">Active</asp:ListItem>
+                                    <asp:ListItem Value="0">Deactive</asp:ListItem>
+                                </asp:DropDownList>
 
+
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2"  CssClass="error" ControlToValidate="ddlStatus" InitialValue="-Select Status-" runat="server" ErrorMessage="please select valid status !! "></asp:RequiredFieldValidator>
                                 <br />
                                 <div class="col-lg-12">
-                                    <asp:Button ID="btnSavae" runat="server" Text="Save"  CssClass="btn btn-info" />
+                                 
+                                    <asp:Button ID="btnSave" runat="server" CssClass="btn btn-info" OnClick="btnSave_Click" Text="Save" />
+
                                     <input type="button" value="Cancel" class=" btn btn-secondary" />
                                 </div>
                             </div>

@@ -7,8 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1.Config.Role
+namespace WebApplication1.Config.City
 {
+
+
     public partial class Create
     {
 
@@ -19,15 +21,7 @@ namespace WebApplication1.Config.Role
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtName;
-        /// <summary>
-        /// ddlStatus control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlStatus;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtName;
 
         /// <summary>
         /// btnSavae control.
@@ -38,6 +32,4 @@ namespace WebApplication1.Config.Role
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSavae;
     }
-
-
 }
